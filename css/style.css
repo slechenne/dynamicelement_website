@@ -57,12 +57,13 @@ h6{
   border-radius: 100px;
   width: fit-content;
   transition: .2s;
+  color: var(--blue-one);
 }
 
 .button:hover {
   border: 5px var(--blue-two) solid;
+  color: var(--blue-two);
 }
-
 
 
 .background{
@@ -187,7 +188,7 @@ header nav ul li a{
   margin-top: 30vh;
 }
 
-.home-button{
+#home .button{
   margin: 30px auto 0 auto;
 }
 
@@ -258,7 +259,11 @@ header nav ul li a{
   }
 
   #about .text-container p{
-      padding-left: 50px;
+    padding-left: 50px;
+  }
+
+  #about .button{
+    margin: 30px 50px 0 0;
   }
 
   .back-2{
