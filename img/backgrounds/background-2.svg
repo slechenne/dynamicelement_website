@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2184.8" height="1721.4" viewBox="0 0 2184.8 1721.4">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2184" height="1722" viewBox="0 0 2184 1722">
   <defs>
-    <linearGradient id="linear-gradient" x1="0.5" x2="0.14" y2="1.013" gradientUnits="objectBoundingBox">
+    <linearGradient id="linear-gradient" x1="0.739" y1="-0.06" x2="0.53" y2="0.593" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#aeecc8"/>
       <stop offset="1" stop-color="#3267b0"/>
     </linearGradient>
   </defs>
-  <path id="Pfad_24" data-name="Pfad 24" d="M3030.4,2132.4s593.315,55.591,769.266,197.474S4014.81,2548.92,4127.8,2585.843s292.7,109.109,492.831,48.124,225.568-90.44,364.829-66.378,194.713,182.539,194.713,182.539l35.024,1039.64s-531.607-128.607-677.955-64.3-416.947,213.238-737.579,64.3-479.905-110.353-604.155-47.709S3030.4,2132.4,3030.4,2132.4Z" transform="translate(-3030.4 -2132.4)" fill="url(#linear-gradient)"/>
+  <rect id="Rechteck_92" data-name="Rechteck 92" width="2184" height="1722" fill="url(#linear-gradient)"/>
 </svg>

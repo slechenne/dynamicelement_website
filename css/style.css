@@ -71,7 +71,10 @@ h6{
   z-index: -5;
 }
 
-
+.wave{
+  z-index: -4;
+  position: absolute;
+}
 
 
 /* header start */
@@ -209,15 +212,12 @@ header nav ul li a{
   .blue-box{
     background-color: var(--blue-two);
     box-shadow: 5px 5px 10px var(--blue-three);
-    height: 600px;
   }
 
   #safety .blue-box img{
-    height: 450px;
-    position: absolute;
-    transform: translateX(-175px);
-    display: flex;
-    margin-top: 75px;
+    width: 50vw;
+    padding: 75px 0;
+    transform: translateX(-11vw);
   }
 
   #safety .text-container{
@@ -232,7 +232,7 @@ header nav ul li a{
     text-align: center;
     color: var(--green-one);
     padding: 0 65px;
-    margin-top: 70px;
+    margin: 70px 0 70px;;
     transform: translateX(-180px);
   }
 /* safety end */
@@ -243,13 +243,9 @@ header nav ul li a{
   }
 
   #about .white-box{
-    height: 500px;
     background-color: #FFF;
     box-shadow: 5px 5px 10px var(--blue-three);
-  }
-
-  #about .text-container{
-    margin-top: 80px;
+    padding: 75px 0;
   }
 
   #about .text-container h4{
@@ -266,10 +262,15 @@ header nav ul li a{
     margin: 30px 50px 0 0;
   }
 
-  .back-2{
-    width: 110vw;
-    left: -150px;
-    margin-top: -240px;
+  .wave1{
+    margin-top: -40px;
+  }
 
+  .wave1 path{
+    fill: url(#linear-gradient1)!important;
+  }
+
+  .wave2{
+    margin-top: 950px;
   }
 /* about section end */
