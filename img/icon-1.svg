@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="241.006" height="159.386" viewBox="0 0 241.006 159.386">
+  <g id="Gruppe_11" data-name="Gruppe 11" transform="translate(-215.772 -217.793)">
+    <rect id="Rechteck_51" data-name="Rechteck 51" width="223.78" height="152.924" rx="20.345" transform="translate(215.772 217.793)" fill="#5e8bb2"/>
+    <rect id="Rechteck_52" data-name="Rechteck 52" width="223.78" height="13.77" transform="translate(215.772 252.862)" fill="#fff"/>
+    <rect id="Rechteck_53" data-name="Rechteck 53" width="95.22" height="13.408" transform="translate(327.662 269.976)" fill="#fff"/>
+    <rect id="Rechteck_54" data-name="Rechteck 54" width="95.22" height="13.046" transform="translate(327.662 285.196)" fill="#fff"/>
+    <rect id="Rechteck_55" data-name="Rechteck 55" width="95.22" height="11.596" transform="translate(327.662 301.14)" fill="#fff"/>
+    <path id="Pfad_42" data-name="Pfad 42" d="M586.319,238.547s-3.488-3.153.4-4.9A2.181,2.181,0,0,1,589.2,236.1c0,2.784-.872,2.449-.872,2.449s1.543,6.071,4.092,5.634,1.677-5.7,1.677-5.7-3.019-3.782.671-4.843a2.342,2.342,0,0,1,2.415,3.233l-.738,2.051s-.7,5.474,2.079,5.283,3.689-5.053,3.555-5.925-1.878-3.649.872-4.642,3.387,2.864,3.085,3.434a7.137,7.137,0,0,1-1.945,1.476,41.448,41.448,0,0,1-1.208,5.97,42.623,42.623,0,0,0-1.442,4.9l-12.284.153S587.222,239.643,586.319,238.547Z" transform="translate(-175.161 -7.441)" fill="#fff"/>
+    <path id="Pfad_43" data-name="Pfad 43" d="M605.334,269.7l-12.611.067v-3.086l12.611-.067Z" transform="translate(-178.882 -23.169)" fill="#fff"/>
+    <path id="Pfad_44" data-name="Pfad 44" d="M240.122,236.064c0,2.784-1.174,2.482-1.174,2.482s1.543,6.071,4.092,5.634,1.677-5.7,1.677-5.7-3.019-3.782.67-4.843a2.342,2.342,0,0,1,2.415,3.233l-.738,2.051s-.7,5.474,2.079,5.283,3.689-5.053,3.555-5.925-1.878-3.649.872-4.642,3.388,2.864,3.085,3.434a7.129,7.129,0,0,1-1.945,1.476,41.376,41.376,0,0,1-1.207,5.97,52.872,52.872,0,0,0-1.61,5.232H239.552s-1.713-10.105-2.616-11.2" transform="translate(-10.043 -7.441)" fill="#fff"/>
+    <path id="Pfad_45" data-name="Pfad 45" d="M254.22,269.639l-12.56.034v-3.086l12.56-.034Z" transform="translate(-12.285 -23.139)" fill="#fff"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="7.334" cy="7.334" r="7.334" transform="translate(414.675 348.58)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+    <rect id="Rechteck_56" data-name="Rechteck 56" width="33.123" height="0.938" transform="translate(428.093 359.805) rotate(30)"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.616" cy="2.616" r="2.616" transform="translate(225.115 226.879)" fill="#fff"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="2.616" cy="2.616" r="2.616" transform="translate(233.198 226.208)" fill="#fff"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="2.616" cy="2.616" r="2.616" transform="translate(241.45 226.033)" fill="#fff"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="2.616" cy="2.616" r="2.616" transform="translate(425.814 226.033)" fill="#fff"/>
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="2.616" cy="2.616" r="2.616" transform="translate(417.53 226.033)" fill="#fff"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="2.616" cy="2.616" r="2.616" transform="translate(409.447 226.208)" fill="#fff"/>
+  </g>
+</svg>

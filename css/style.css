@@ -36,9 +36,24 @@ h1{
   font-weight: bold;
 }
 
-h4{
-  font-size: 2rem;
+h2{
+  font-size: 2.2rem;
   font-weight: bold;
+}
+
+h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h5{
+  font-size: 0.6rem;
+  font-weight: 600;
 }
 
 h6{
@@ -65,6 +80,15 @@ h6{
   color: var(--blue-two);
 }
 
+.blue-box{
+  background-color: var(--blue-two);
+  box-shadow: 5px 5px 10px var(--blue-three);
+}
+
+.white-box{
+  background-color: #FFF;
+  box-shadow: 5px 5px 10px var(--blue-three);
+}
 
 .background{
   position: absolute;
@@ -93,7 +117,9 @@ header .logo{
 header .burger-box{
   height: 50px;
   width: 50px;
-  float: right;
+  position: absolute;
+  right: 0;
+  z-index: 10;
   margin: 25px 40px 0 0;
   cursor: pointer;
 }
@@ -159,7 +185,7 @@ header nav{
   height: 60vh;
   background-color: #FFF;
   transition: 500ms ease-out;
-  z-index: -1;
+  z-index: 1;
   overflow: hidden;
   box-shadow: 10px -10px 30px var(--blue-three);
 }
@@ -177,6 +203,10 @@ header nav ul{
 
 header nav ul li{
   margin: 20px 0;
+}
+
+header nav ul li h2{
+  font-size: 2rem;
 }
 
 header nav ul li a{
@@ -209,11 +239,6 @@ header nav ul li a{
     margin-top: 60vh;
   }
 
-  .blue-box{
-    background-color: var(--blue-two);
-    box-shadow: 5px 5px 10px var(--blue-three);
-  }
-
   #safety .blue-box img{
     width: 50vw;
     padding: 75px 0;
@@ -224,7 +249,7 @@ header nav ul li a{
     margin-top: 90px;
   }
 
-  #safety h4{
+  #safety h2{
     color: #FFF;
   }
 
@@ -243,12 +268,10 @@ header nav ul li a{
   }
 
   #about .white-box{
-    background-color: #FFF;
-    box-shadow: 5px 5px 10px var(--blue-three);
     padding: 75px 0;
   }
 
-  #about .text-container h4{
+  #about .text-container h2{
     color: var(--blue-two);
     padding-right: 270px;
     margin-bottom: 30px;
@@ -274,3 +297,106 @@ header nav ul li a{
     margin-top: 950px;
   }
 /* about section end */
+
+/* block-chain start */
+  #block-chain{
+    margin-top: 400px;
+  }
+
+  #block-chain .blue-box{
+    height: 400px;
+  }
+
+  #block-chain p{
+    text-align: center;
+    margin-top: 50px;
+  }
+/* block-chain end */
+
+
+/* tech start */
+  .wave3{
+    margin-top: 250px;
+  }
+
+  .wave3 path{
+    fill: url(#linear-gradient2)!important;
+  }
+
+  .wave4{
+    margin-top: 1300px;
+  }
+
+  #tech{
+    margin-top: 300px;
+  }
+
+  #tech h2, #tech h3{
+    text-align: right;
+    color: var(--blue-two);
+  }
+
+  #tech .white-box p{
+    text-align: center;
+    padding: 0 90px;
+  }
+
+  #tech .text-container{
+    padding: 75px 0;
+    margin-top: 75px;
+  }
+
+  #tech .text-container img{
+    width: 100%;
+    padding: 0 75px 0 0;
+  }
+
+  #tech .tech-desc{
+    margin-top: 100px;
+    padding: 0 40px;
+  }
+
+  #tech .tech-desc .white-box{
+    height: 330px;
+    border-radius: 15px;
+    padding: 30px;
+  }
+
+  #tech .tech-desc > div:nth-child(1) img{
+    margin-top: 60px;
+    width: 75%;
+  }
+
+  #tech .tech-desc > div:nth-child(2) img{
+    width: 60%;
+    margin-top: -70px;
+  }
+
+  #tech .tech-desc .white-box .text-container{
+    width: 38%;
+    display: inline-block;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  #tech .tech-desc .white-box .text-container h4{
+    font-size: 0.8rem;
+  }
+
+  #tech .tech-desc > div:nth-child(3) img{
+    width: 16%;
+    margin: 0px 40% 30px;
+  }
+
+  #tech .tech-desc > div:nth-child(4) img{
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  #tech p{
+    text-align: right;
+    padding: 40px 75px 0 0;
+  }
+/* tech end */
