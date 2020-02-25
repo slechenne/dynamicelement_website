@@ -386,7 +386,7 @@ header nav ul li a{
   }
 
   #tech .tech-desc > div:nth-child(3) img{
-    width: 16%;
+    height: 70%;
     margin: 0px 40% 30px;
   }
 
