@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1146.412" height="1116.571" viewBox="0 0 1146.412 1116.571">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1108.812" height="1116.571" viewBox="0 0 1108.812 1116.571">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="1.039" y2="0.784" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#aeecc8"/>
       <stop offset="1" stop-color="#2255ad"/>
     </linearGradient>
   </defs>
-  <path id="Pfad_22" data-name="Pfad 22" d="M949.848,5171.2c90.152-82,19.351-172.4,120.551-206.4s122.4,56.8,234.4,19.6,202.8-190.4,346.8-151.2S2058.8,5050,2058.8,5050l-37.6,730.8S1842,5930,1808,5930s-297.2,44.4-402-28.4-275.2-206-366-261.2S859.7,5253.2,949.848,5171.2Z" transform="translate(-912.388 -4826.836)" fill="url(#linear-gradient)"/>
+  <path id="Pfad_22" data-name="Pfad 22" d="M949.848,5171.2c90.152-82,19.351-172.4,120.551-206.4s122.4,56.8,234.4,19.6,202.8-190.4,346.8-151.2,369.6,224.219,369.6,224.219V5780.8S1842,5930,1808,5930s-297.2,44.4-402-28.4-275.2-206-366-261.2S859.7,5253.2,949.848,5171.2Z" transform="translate(-912.388 -4826.836)" fill="url(#linear-gradient)"/>
 </svg>

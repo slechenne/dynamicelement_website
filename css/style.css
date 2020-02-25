@@ -11,7 +11,6 @@ body, html{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 15px;
-  overflow-x: hidden;
 }
 
 
@@ -182,7 +181,6 @@ header nav{
   right: 0px;
   top: 0px;
   width: 0vw;
-  height: 60vh;
   background-color: #FFF;
   transition: 500ms ease-out;
   z-index: 1;
@@ -191,7 +189,7 @@ header nav{
 }
 
 header nav.open{
-  width: 26vw;
+  width: 400px;
 }
 
 header nav ul{
@@ -212,6 +210,23 @@ header nav ul li h2{
 header nav ul li a{
   color: var(--blue-one);
 }
+
+header nav ul:nth-child(2){
+  margin-top: 25px;
+}
+
+header nav ul:nth-child(2) li{
+  float: left;
+  margin: 25px 12px 35px 0;
+}
+
+header nav ul:nth-child(2) li:not(:first-child)::before{
+    content: "|";
+    color: var(--blue-one);
+    position: absolute;
+    margin: 5px 0 0 -8px;
+    font-size: 1rem;
+}
 /* nav end */
 /* header end */
 
@@ -226,7 +241,7 @@ header nav ul li a{
 }
 
 .back-1{
-  right: -50px;
+  right: 0px;
   top: 90px;
   width: 50vw;
 }
@@ -360,6 +375,7 @@ header nav ul li a{
     height: 330px;
     border-radius: 15px;
     padding: 30px;
+    overflow: hidden;
   }
 
   #tech .tech-desc > div:nth-child(1) img{
@@ -400,3 +416,60 @@ header nav ul li a{
     padding: 40px 75px 0 0;
   }
 /* tech end */
+
+
+
+
+
+/* clients start */
+#clients{
+  margin-top: 100px;
+}
+
+#clients h2{
+  color: var(--blue-two);
+}
+
+#clients .swiper-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+}
+
+#clients .swiper-slide {
+  padding: 0 35%;
+}
+
+  #clients .swiper-slide img{
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  #clients .swiper-slide p{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #clients .swiper-button-next, #clients .swiper-button-prev{
+    color: black;
+  }
+
+  #clients .swiper-pagination-bullet-active-main{
+    background: black;
+  }
+
+/* clients end */
+
+
+/* team start */
+  #team{
+    margin-top: 200px;
+  }
+
+  #team h2{
+    text-align: right;
+    color: var(--blue-two);
+  }
+
+  
+/* team end */
