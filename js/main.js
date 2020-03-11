@@ -47,6 +47,23 @@ var myWave4 = $('#wave4').wavify({
   speed: .13
 });
 
+var myWave5 = $('#wave5').wavify({
+  height: 40,
+  bones: 4,
+  amplitude: 120,
+  // color: '#FFF',
+  speed: .12
+});
+
+var myWave6 = $('#wave6').wavify({
+  height: 40,
+  bones: 3,
+  amplitude: 120,
+  color: '#FFF',
+  speed: .13
+});
+
+
 
 
 var swiper = new Swiper('.swiper-container', {

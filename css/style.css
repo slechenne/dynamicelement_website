@@ -11,6 +11,7 @@ body, html{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 
@@ -462,6 +463,18 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
 
 
 /* team start */
+  .wave5{
+    margin-top: -100px;
+  }
+
+  .wave5 path{
+    fill: url(#linear-gradient3)!important;
+  }
+
+  .wave6{
+    margin-top: 750px;
+  }
+
   #team{
     margin-top: 200px;
   }
@@ -471,5 +484,92 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
     color: var(--blue-two);
   }
 
-  
+  #team .col-5{
+    margin: 80px 45px 0 45px;
+  }
+
+  #team .white-box{
+    border-radius: 20px;
+    padding: 50px 30px 0 30px;
+  }
+
+  #team .white-box h3, #team .white-box p{
+    text-align: center;
+  }
+
+  #team .white-box img{
+    width: 100%;
+    margin-top: 50px;
+  }
+
 /* team end */
+
+
+/* contact start */
+  #contact{
+    margin-top: 200px;
+  }
+
+  #contact .white-box{
+    border-radius: 20px;
+    padding: 30px 80px 0 80px;
+  }
+
+  #contact .white-box h2{
+    color: var(--blue-two);
+    margin-bottom: 40px;
+  }
+
+  #contact .white-box p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #contact .white-box input,   #contact .white-box textarea{
+    border: 0;
+    border-bottom: black 2px solid;
+    width: 80%;
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    outline: none;
+  }
+
+  #contact .white-box textarea{
+    width: 90%;
+    height: 100px;
+  }
+
+  #contact .white-box input[type=submit]{
+    padding: 15px 50px;
+    border: 5px var(--blue-one) solid;
+    background-color: transparent;
+    border-radius: 100px;
+    width: fit-content;
+    transition: .2s;
+    color: var(--blue-one);
+  }
+
+  #contact .white-box input[type=submit]:hover{
+    border: 5px var(--blue-two) solid;
+    color: var(--blue-two);
+  }
+/* contact end */
+
+
+/* footer start */
+  footer{
+    margin-top: 300px;
+    padding-bottom: 50px;
+  }
+
+  footer p, footer a{
+    font-size: 1rem;
+    color: #525252;
+    font-weight: 600;
+    text-align: center;
+  }
+
+/* footer end */
