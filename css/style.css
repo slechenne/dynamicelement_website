@@ -12,6 +12,7 @@ body, html{
   font-weight: bold;
   font-size: 15px;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 
@@ -64,6 +65,38 @@ h6{
 /* fonts end */
 
 
+
+
+/* cursor start */
+
+#cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#cursor span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    left: -10px;
+    border-radius: 20px;
+    background-color: black;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* cursor end */
 
 
 .button{
