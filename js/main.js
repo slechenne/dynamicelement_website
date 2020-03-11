@@ -90,11 +90,32 @@ let cursorInit = !1;
     window.addEventListener("mousemove", onMouseMove), window.addEventListener("touchmove", onTouchMove),
       hoverButton = new HoverButton("button"), lastFrame += new Date, buildDots(), render()
 
-    window.addEventListener("mouseleave", leaveMouse);
+    document.addEventListener('mouseleave', function (e) {
+      cursor.style.display = "none";
+    }, false);
 
-    function leaveMouse(){
-      alert("mouse leave");
-    }
+    document.addEventListener('mouseenter', function (e) {
+  		cursor.style.display = "block";
+  	}, false);
+
+    $(document).on('mouseenter', 'a, .cursor_hover, input, textarea', function() {
+      $("#cursor").addClass('hover');
+    });
+    $(document).on('mouseleave', 'a, .cursor_hover, input, textarea', function() {
+      $("#cursor").removeClass('hover');
+    });
+    $(document).on('mousedown', 'a, .cursor_hover, input, textarea', function() {
+      $("#cursor").removeClass('hover');
+    });
+
+    $(document).on('mouseenter', '.blue-box', function() {
+      $("#cursor").addClass('blue-hover');
+    });
+    $(document).on('mouseleave', '.blue-box', function() {
+      $("#cursor").removeClass('blue-hover');
+    });
+
+
   }
 
 

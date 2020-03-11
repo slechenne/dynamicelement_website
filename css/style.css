@@ -76,8 +76,8 @@ h6{
   border-radius: 0;
   -webkit-transform-origin: center center;
   transform-origin: center center;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   z-index: 1000;
 }
 
@@ -88,13 +88,27 @@ h6{
     height: 30px;
     top: -10px;
     left: -10px;
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: black;
     -webkit-transform-origin: center center;
     transform-origin: center center;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    transition: height 400ms, width 400ms, background-color 400ms;
 }
+
+  #cursor.hover span{
+    height: 50px;
+    width: 50px;
+  }
+
+  #cursor.blue-hover span{
+    background-color: #FFF;
+  }
+
+  .cursor_hover, a, input, textarea{
+    cursor: none;
+  }
 
 /* cursor end */
 
@@ -154,7 +168,6 @@ header .burger-box{
   right: 0;
   z-index: 10;
   margin: 25px 40px 0 0;
-  cursor: pointer;
 }
 
 header .burger-box hr{
