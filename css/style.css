@@ -89,7 +89,7 @@ h6{
     top: -10px;
     left: -10px;
     border-radius: 50px;
-    background-color: black;
+    background-color: var(--blue-two);
     -webkit-transform-origin: center center;
     transform-origin: center center;
     -webkit-transform: translate(-50%, -50%);
@@ -100,6 +100,7 @@ h6{
   #cursor.hover span{
     height: 50px;
     width: 50px;
+    transform: translate(-20px, -20px);
   }
 
   #cursor.blue-hover span{
@@ -148,6 +149,8 @@ h6{
 }
 
 
+
+
 /* header start */
 header .header-row{
   margin-top: 20px;
@@ -159,6 +162,19 @@ header .logo{
   margin-left: 20px;
 }
 /* logo end */
+
+/* blob start */
+#blob{
+  top: -300px;
+  right: 00px;
+}
+
+#blob path {
+  fill:url(#blob_gradient) !important;
+}
+
+/* blob end */
+
 
 /* burger box start */
 header .burger-box{
@@ -465,12 +481,62 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
 /* tech end */
 
 
+/* delivered start */
+  #delivered{
+    padding-right: 130px;
+    padding-left: 130px;
+    margin-top: 200px;
+  }
+
+  #delivered h2{
+    color: var(--blue-two);
+    margin-bottom: 30px;
+  }
+
+  #delivered .white-box{
+    height: 230px;
+    padding: 20px;
+    width: 12.734%;
+    margin: 10px;
+    box-shadow: 0px 0px transparent;
+    transition: 400ms;
+  }
+
+  #delivered .white-box:hover{
+    box-shadow: 5px 5px 10px var(--blue-three);
+  }
+
+
+  #delivered .white-box img{
+    width: 100%;
+    height: 115px;
+  }
+
+  #delivered .white-box img.check{
+    height: 90px;
+    margin-top: 15px;
+    opacity: 0;
+    transition: 400ms;
+  }
+
+  #delivered .white-box:hover img.check{
+    opacity: 1;
+  }
+
+  #delivered .white-box h4{
+    margin-top: 30px;
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+/* delivered end */
 
 
 
 /* clients start */
 #clients{
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 #clients h2{
@@ -616,6 +682,24 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
     color: #525252;
     font-weight: 600;
     text-align: center;
+  }
+
+  footer .back-to-top{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 50px;
+    transition: 400ms;
+  }
+
+  footer .back-to-top:hover{
+    box-shadow: 5px 5px 10px var(--blue-three);
+  }
+
+  footer .back-to-top img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
   }
 
 /* footer end */

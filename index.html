@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body id="body">
 
     <!-- cursor -->
     <div id="cursor"></div>
@@ -68,7 +68,13 @@
       </div>
     </section>
 
-    <img src="img/backgrounds/background-1.svg" alt="back1" class="background back-1">
+    <svg id="blob" class="wave" viewBox="0 0 1000 1000">
+      <linearGradient id="blob_gradient" x1="0.5" x2="1.039" y2="0.784" gradientUnits="objectBoundingBox">
+              <stop offset="0" stop-color="#aeecc8"/>
+              <stop offset="1" stop-color="#3267b0"/>
+            </linearGradient>
+      <path id="blob_path" fill="url(#blob_gradient)"></path>
+    </svg>
 
 
 
@@ -271,9 +277,63 @@ The krakelee is pad-printed with the logo.</h5>
     </section>
 
 
-    <!-- <section id="delivered">
+    <section id="delivered" class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h2>how it gets delivered</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
 
-    </section> -->
+          <div class="white-box">
+            <img src="img/icon-5.svg" alt="icon5">
+            <h4>HERSTELLER</h4>
+          </div>
+
+
+          <div class="white-box">
+            <img src="img/icon-6.svg" alt="icon6">
+            <h4>VERPACKUNG</h4>
+            <img src="img/checkmark.svg" alt="check" class="check">
+          </div>
+
+
+          <div class="white-box">
+            <img src="img/icon-7.svg" alt="icon7">
+            <h4>DISTRIBUTION</h4>
+            <img src="img/questionmark.svg" alt="check" class="check">
+          </div>
+
+
+          <div class="white-box">
+            <img src="img/icon-8.svg" alt="icon8">
+            <h4>ZOLL</h4>
+            <img src="img/questionmark.svg" alt="check" class="check">
+          </div>
+
+
+          <div class="white-box">
+            <img src="img/icon-9.svg" alt="icon9">
+            <h4>DISTRIBUTION</h4>
+            <img src="img/questionmark.svg" alt="check" class="check">
+          </div>
+
+
+          <div class="white-box">
+            <img src="img/icon-10.svg" alt="icon10">
+            <h4>WARENANNAHME HÄNDLER</h4>
+            <img src="img/questionmark.svg" alt="check" class="check">
+          </div>
+
+
+          <div class="white-box">
+            <img src="img/icon-11.svg" alt="icon11">
+            <h4>ENDVERBRAUCHER</h4>
+            <img src="img/checkmark.svg" alt="check" class="check">
+          </div>
+
+      </div>
+    </section>
 
     <section id="clients" class="container">
       <div class="row justify-content-center">
@@ -299,8 +359,8 @@ The krakelee is pad-printed with the logo.</h5>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next cursor_hover"></div>
+              <div class="swiper-button-prev cursor_hover"></div>
             </div>
           </div>
         </div>
@@ -383,6 +443,12 @@ The krakelee is pad-printed with the logo.</h5>
 
 
       <footer>
+        <a href="#body">
+        <div class="back-to-top">
+          <img src="img/back-to-top.svg" alt="back to top">
+        </div>
+        </a>
+        
         <p>Copyright © 2020 DynamicElement</p>
 
         <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
