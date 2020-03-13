@@ -14,43 +14,6 @@ let cursorInit = !1;
     dots = [],
     idle = !1;
 
-  class HoverButton {
-    constructor (e) {
-      this.hovered = !1, this.animatingHover = !1, this.forceOut = !1, this.timing = .65, this.el = document
-        .getElementById(e)
-    }
-
-    onMouseEnter () {
-      this.hoverInAnim()
-    }
-
-    hoverInAnim () {
-      this.hovered || (this.hovered = !0, this.animatingHover = !0, this.forceOut = !1, TweenMax.fromTo(this
-        .bg, this.timing, {
-        x: "-112%"
-      }, {
-        x: "-12%",
-        ease: Power3.easeOut,
-        onComplete: () => {
-          this.animatingHover = !1, this.forceOut && (this.foceOut = !1, this
-            .hoverOutAnim())
-        }
-      }))
-    }
-
-    onMouseLeave () {
-      this.animatingHover ? this.forceOut = !0 : this.hoverOutAnim()
-    }
-
-    hoverOutAnim () {
-      this.hovered = !1, TweenMax.to(this.bg, this.timing, {
-        x: "100%",
-        ease: Power3.easeOut,
-        onComplete: () => {
-        }
-      })
-    }
-  }
 
   class Dot {
     constructor (e = 0) {
@@ -88,7 +51,7 @@ let cursorInit = !1;
 
   function init () {
     window.addEventListener("mousemove", onMouseMove), window.addEventListener("touchmove", onTouchMove),
-      hoverButton = new HoverButton("button"), lastFrame += new Date, buildDots(), render()
+       lastFrame += new Date, buildDots(), render()
 
     document.addEventListener('mouseleave', function (e) {
       cursor.style.display = "none";
@@ -107,15 +70,9 @@ let cursorInit = !1;
 
 
 
-    $(document).on('mouseenter', '.blue-box', function() {
-      $("#cursor").addClass('blue-hover');
+    $( ".blue-box" ).hover(function(){
+      $("#cursor").toggleClass('blue-hover');
     });
-    $(document).on('mouseleave', '.blue-box', function() {
-      $("#cursor").removeClass('blue-hover');
-    });
-
-
-
 
 
   }
@@ -144,6 +101,7 @@ let cursorInit = !1;
   const onMouseMove = e => {
       mousePosition.x = e.clientX - width / 2, mousePosition.y = e.clientY - width / 2, resetIdleTimer()
     },
+
     onTouchMove = () => {
       mousePosition.x = event.touches[0].clientX - width / 2, mousePosition.y = event.touches[0].clientY - width /
         2, resetIdleTimer()
@@ -260,6 +218,10 @@ let cursorInit = !1;
      inkMediaObserver(), inkTablet.addListener(inkMediaObserver), inkMobile.addListener(inkMediaObserver);
     }
   }
+
+
+
+
 
 
 
@@ -452,3 +414,12 @@ var swiper = new Swiper('.swiper-container', {
   //   disableOnInteraction: false,
   // },
 });
+
+
+
+
+
+
+
+
+    AOS.init();

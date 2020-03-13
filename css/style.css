@@ -133,6 +133,10 @@ h6{
   box-shadow: 5px 5px 10px var(--blue-three);
 }
 
+.blue-box:hover #cursor span{
+  background-color: #FFF;
+}
+
 .white-box{
   background-color: #FFF;
   box-shadow: 5px 5px 10px var(--blue-three);
