@@ -167,19 +167,6 @@ header .logo{
 }
 /* logo end */
 
-/* blob start */
-#blob{
-  top: -300px;
-  right: 00px;
-}
-
-#blob path {
-  fill:url(#blob_gradient) !important;
-}
-
-/* blob end */
-
-
 /* burger box start */
 header .burger-box{
   height: 50px;
@@ -307,11 +294,17 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
   margin: 30px auto 0 auto;
 }
 
-.back-1{
-  right: 0px;
-  top: 90px;
-  width: 50vw;
+/* blob start */
+#blob{
+  top: -300px;
+  right: 00px;
 }
+
+#blob path {
+  fill:url(#blob_gradient) !important;
+}
+
+/* blob end */
 /* home end */
 
 
