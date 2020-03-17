@@ -378,6 +378,17 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
   .wave2{
     margin-top: 950px;
   }
+
+  .canvas-overflow{
+    height: 515px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  canvas#padlock{
+    transform: translateX(-30%);
+  }
+
 /* about section end */
 
 /* block-chain start */

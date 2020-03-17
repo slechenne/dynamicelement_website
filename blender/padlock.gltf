@@ -1,0 +1,265 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.0.5",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                3,
+                4
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Kamera",
+            "translation" : [
+                -0.022062301635742188,
+                46.6930046081543,
+                -4.783846378326416
+            ]
+        },
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Holder",
+            "scale" : [
+                0.4410201907157898,
+                0.5917154550552368,
+                0.6723591685295105
+            ],
+            "translation" : [
+                0.5977306365966797,
+                0.015891598537564278,
+                0.4344891309738159
+            ]
+        },
+        {
+            "children" : [
+                2
+            ],
+            "mesh" : 1,
+            "name" : "Corpus",
+            "rotation" : [
+                0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "scale" : [
+                4.339643478393555,
+                3.5999999046325684,
+                2.8689000606536865
+            ],
+            "translation" : [
+                -0.009716475382447243,
+                2.9946579933166504,
+                0.093292236328125
+            ]
+        },
+        {
+            "name" : "Fl\u00e4che",
+            "translation" : [
+                10,
+                0,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "SteelLock",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.5596060156822205,
+                    0.5596060156822205,
+                    0.5596060156822205,
+                    1
+                ],
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.30327868461608887
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Brass",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    1,
+                    0.39072075486183167,
+                    0.08636892586946487,
+                    1
+                ],
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Holder",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Corpus",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 2880,
+            "max" : [
+                0.31008684635162354,
+                0.3000001013278961,
+                0.0011540651321411133
+            ],
+            "min" : [
+                -3.1100857257843018,
+                -0.3000001013278961,
+                -5.30995512008667
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2880,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2880,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 17268,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1075,
+            "max" : [
+                1,
+                0.29342833161354065,
+                1
+            ],
+            "min" : [
+                -1,
+                -0.2929605543613434,
+                -1
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1075,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1075,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 2310,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 34560,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 34560,
+            "byteOffset" : 34560
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 23040,
+            "byteOffset" : 69120
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 34536,
+            "byteOffset" : 92160
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12900,
+            "byteOffset" : 126696
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12900,
+            "byteOffset" : 139596
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8600,
+            "byteOffset" : 152496
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4620,
+            "byteOffset" : 161096
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 165716,
+            "uri" : "padlock.bin"
+        }
+    ]
+}
