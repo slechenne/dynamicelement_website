@@ -42,14 +42,14 @@
             "mesh" : 0,
             "name" : "Holder",
             "scale" : [
-                0.4410201907157898,
+                0.4410202205181122,
                 0.5917154550552368,
                 0.6723591685295105
             ],
             "translation" : [
                 0.5977306365966797,
-                0.015891598537564278,
-                0.4344891309738159
+                0.015891604125499725,
+                0.4344891905784607
             ]
         },
         {
@@ -62,17 +62,17 @@
                 0.7071067690849304,
                 0,
                 0,
-                0.7071068286895752
+                0.7071067690849304
             ],
             "scale" : [
-                4.339643478393555,
+                4.339640140533447,
                 3.5999999046325684,
                 2.8689000606536865
             ],
             "translation" : [
-                -0.009716475382447243,
-                2.9946579933166504,
-                0.093292236328125
+                -0.009716000407934189,
+                2.994659900665283,
+                0.0932919979095459
             ]
         },
         {
@@ -136,9 +136,10 @@
                     "attributes" : {
                         "POSITION" : 4,
                         "NORMAL" : 5,
-                        "TEXCOORD_0" : 6
+                        "TEXCOORD_0" : 6,
+                        "TEXCOORD_1" : 7
                     },
-                    "indices" : 7,
+                    "indices" : 8,
                     "material" : 1
                 }
             ]
@@ -182,15 +183,15 @@
         {
             "bufferView" : 4,
             "componentType" : 5126,
-            "count" : 1075,
+            "count" : 1416,
             "max" : [
                 1,
-                0.29342833161354065,
+                0.2944444417953491,
                 1
             ],
             "min" : [
                 -1,
-                -0.2929605543613434,
+                -0.2944444417953491,
                 -1
             ],
             "type" : "VEC3"
@@ -198,19 +199,25 @@
         {
             "bufferView" : 5,
             "componentType" : 5126,
-            "count" : 1075,
+            "count" : 1416,
             "type" : "VEC3"
         },
         {
             "bufferView" : 6,
             "componentType" : 5126,
-            "count" : 1075,
+            "count" : 1416,
             "type" : "VEC2"
         },
         {
             "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 1416,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 8,
             "componentType" : 5123,
-            "count" : 2310,
+            "count" : 2982,
             "type" : "SCALAR"
         }
     ],
@@ -237,28 +244,33 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 12900,
+            "byteLength" : 16992,
             "byteOffset" : 126696
         },
         {
             "buffer" : 0,
-            "byteLength" : 12900,
-            "byteOffset" : 139596
+            "byteLength" : 16992,
+            "byteOffset" : 143688
         },
         {
             "buffer" : 0,
-            "byteLength" : 8600,
-            "byteOffset" : 152496
+            "byteLength" : 11328,
+            "byteOffset" : 160680
         },
         {
             "buffer" : 0,
-            "byteLength" : 4620,
-            "byteOffset" : 161096
+            "byteLength" : 11328,
+            "byteOffset" : 172008
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5964,
+            "byteOffset" : 183336
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 165716,
+            "byteLength" : 189300,
             "uri" : "padlock.bin"
         }
     ]
