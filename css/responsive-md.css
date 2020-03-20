@@ -1,0 +1,56 @@
+@media (max-width:768px) {
+
+  body, html{
+    font-size: 10px;
+  }
+
+
+  h2{
+    font-size: 1.8rem;
+  }
+
+
+
+/* home start */
+  #home h1{
+    text-align: center;
+  }
+
+/* home end */
+
+
+/* safety start */
+    #safety{
+      margin-top: 30vh;
+    }
+
+    #safety .blue-box{
+      padding: 20px;
+    }
+
+    #safety .blue-box img{
+      padding: 0;
+      width: 100%;
+      transform: translate(0);
+    }
+
+    #safety .text-container{
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    #safety h2{
+      color: #FFF;
+    }
+
+    #safety p{
+      text-align: center;
+      color: var(--green-one);
+      padding: 10px;
+      margin: 0;
+      width: 100%;
+      transform: translate(0);
+    }
+/* safety end */
+
+}

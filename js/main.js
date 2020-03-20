@@ -50,7 +50,7 @@ let cursorInit = !1;
   }
 
   function init () {
-    window.addEventListener("mousemove", onMouseMove), window.addEventListener("touchmove", onTouchMove),
+    window.addEventListener("mousemove", onMouseMove),
        lastFrame += new Date, buildDots(), render()
 
     document.addEventListener('mouseleave', function (e) {
@@ -73,6 +73,15 @@ let cursorInit = !1;
     $( ".blue-box" ).hover(function(){
       $("#cursor").toggleClass('blue-hover');
     });
+
+
+    window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
+
+    if (window.isMobile === true) {
+    	cursor.style.display = "none";
+
+    }
+
 
 
   }
@@ -101,11 +110,6 @@ let cursorInit = !1;
   const onMouseMove = e => {
       mousePosition.x = e.clientX - width / 2, mousePosition.y = e.clientY - width / 2, resetIdleTimer()
     },
-
-    onTouchMove = () => {
-      mousePosition.x = event.touches[0].clientX - width / 2, mousePosition.y = event.touches[0].clientY - width /
-        2, resetIdleTimer()
-    },
     render = e => {
       positionCursor(e - lastFrame), lastFrame = e, requestAnimationFrame(render)
     },
@@ -120,12 +124,8 @@ let cursorInit = !1;
           t += e, i += s
         }
       })
-    },
-    inkTablet = window.matchMedia("(max-width: 991px)"),
-    inkMobile = window.matchMedia("(max-width: 479px)"),
-    inkMediaObserver = () => {
-      inkMobile.matches || inkTablet.matches || cursorInit || (cursorInit = !0, init())
     };
+
 
   const noise = () => {
     let canvas, ctx;
@@ -213,9 +213,9 @@ let cursorInit = !1;
 
 
   window.onload = function() {
-    if(window.innerWidth > 991) {
+    if(window.innerWidth > 1) {
      noise();
-     inkMediaObserver(), inkTablet.addListener(inkMediaObserver), inkMobile.addListener(inkMediaObserver);
+     init();
     }
   }
 
@@ -295,6 +295,8 @@ var myWave6 = $('#wave6').wavify({
 
 
 // blob
+
+
 var blob1 = createBlob({
   element: document.querySelector("#blob_path"),
   numPoints: 15,
@@ -302,6 +304,18 @@ var blob1 = createBlob({
   centerY: 500,
   minRadius: 230,
   maxRadius: 290,
+  minDuration: 3,
+  maxDuration: 5
+});
+
+
+var blob2 = createBlob({
+  element: document.querySelector("#blob_path2"),
+  numPoints: 15,
+  centerX: 500,
+  centerY: 500,
+  minRadius: 430,
+  maxRadius: 490,
   minDuration: 3,
   maxDuration: 5
 });

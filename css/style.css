@@ -304,6 +304,14 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
   fill:url(#blob_gradient) !important;
 }
 
+#blob path:nth-child(2){
+  display: block;
+}
+
+#blob path:nth-child(3){
+  display: none;
+}
+
 /* blob end */
 /* home end */
 
@@ -390,7 +398,8 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
   }
 
   #block-chain .blue-box{
-    height: 400px;
+    height: 30vh;
+    min-height: 350px;
   }
 
   #block-chain p{
@@ -446,6 +455,7 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
     height: 330px;
     border-radius: 15px;
     padding: 30px;
+    margin: 20px 0;
     overflow: hidden;
   }
 
@@ -561,23 +571,23 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
   padding: 0 35%;
 }
 
-  #clients .swiper-slide img{
-    width: 100%;
-    margin-top: 70px;
-  }
+#clients .swiper-slide img{
+  width: 100%;
+  margin-top: 70px;
+}
 
-  #clients .swiper-slide p{
-    text-align: center;
-    margin-top: 30px;
-  }
+#clients .swiper-slide p{
+  text-align: center;
+  margin-top: 30px;
+}
 
-  #clients .swiper-button-next, #clients .swiper-button-prev{
-    color: black;
-  }
+#clients .swiper-button-next, #clients .swiper-button-prev{
+  color: black;
+}
 
-  #clients .swiper-pagination-bullet-active-main{
-    background: black;
-  }
+#clients .swiper-pagination-bullet-active-main{
+  background: black;
+}
 
 /* clients end */
 
@@ -605,7 +615,7 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
   }
 
   #team .col-5{
-    margin: 80px 45px 0 45px;
+    margin: 80px 40px 0 40px;
   }
 
   #team .white-box{
