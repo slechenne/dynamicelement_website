@@ -548,6 +548,18 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
     text-align: center;
     font-size: 0.8rem;
   }
+
+  #delivered .swiper-container{
+    overflow: visible;
+  }
+
+  #delivered .swiper-button-next, #delivered .swiper-button-prev{
+    color: black;
+  }
+
+  #delivered .swiper-pagination-bullet-active-main{
+    background: black;
+  }
 /* delivered end */
 
 
@@ -614,7 +626,7 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
     color: var(--blue-two);
   }
 
-  #team .col-5{
+  #team .col-md-5{
     margin: 80px 40px 0 40px;
   }
 

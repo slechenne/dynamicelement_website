@@ -411,9 +411,38 @@ function random(min, max) {
 
 
 
+$( document ).ready(function() {
+if ($(window).width() < 960) {
+         var swiper = new Swiper('#delivered .swiper-container', {
+           slidesPerView: 3,
+           centeredSlides: true,
+           spaceBetween: 30,
+           pagination: {
+             el: '#delivered .swiper-pagination',
+             dynamicBullets: true,
+           },
+           navigation: {
+             nextEl: '#delivered .swiper-button-next',
+             prevEl: '#delivered .swiper-button-prev',
+           },
+           // autoplay: {
+           //   delay: 2500,
+           //   disableOnInteraction: false,
+           // },
+         });
+        }
+        else {
+         $("#delivered .swiper-pagination").hide();
+         $("#delivered .swiper-button-next").hide();
+         $("#delivered .swiper-button-prev").hide();
+        }
+});
 
 
-var swiper = new Swiper('.swiper-container', {
+
+
+
+var swiper = new Swiper('#clients .swiper-container', {
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -428,6 +457,8 @@ var swiper = new Swiper('.swiper-container', {
   //   disableOnInteraction: false,
   // },
 });
+
+
 
 
 
@@ -462,12 +493,12 @@ function init_blender() {
   hlight = new THREE.AmbientLight (0x404040,100);
   scene.add(hlight);
 
-  light = new THREE.PointLight(0xffffff,6);
+  light = new THREE.PointLight(0xfaffcf,4);
   light.position.set(5000,1000,0);
   scene.add(light);
 
 
-  light2 = new THREE.PointLight(0xffffff,5);
+  light2 = new THREE.PointLight(0xfaffcf,3);
   light2.position.set(-5000,3000,5000);
   scene.add(light2);
 

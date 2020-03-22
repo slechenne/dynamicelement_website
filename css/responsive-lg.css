@@ -23,7 +23,24 @@
 
 
 
+/* about start */
+  #about .text-container h2{
+    padding-right: 50px;
+  }
 
+  #about .text-container p{
+    padding-left: 10px;
+  }
+
+  #about .button{
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  canvas#padlock{
+    transform: translate(-4%, -4%);
+  }
+/* about end */
 
 
 /* tech start */
@@ -41,4 +58,28 @@
     margin: 80px 0px 0 0px;
   }
 /* team end */
+
+
+
+
+/* delivered start */
+  #delivered{
+    padding: 0 30px;
+    margin-top: 200px;
+  }
+
+  #delivered .white-box{
+    margin: 0;
+    box-shadow: 5px 5px 10px var(--blue-three);
+  }
+
+  #delivered .white-box img.check{
+    opacity: 1;
+  }
+
+  #delivered .swiper-container{
+    height: 350px;
+    overflow: hidden;
+  }
+/* delivered end */
 }
