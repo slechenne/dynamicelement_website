@@ -476,6 +476,7 @@ function init_blender() {
 
   loader.load('blender/padlock.gltf', function(gltf){
     padlock = gltf.scene.children[3];
+
     scene.add(gltf.scene);
     animate();
   });

@@ -16,9 +16,9 @@
 
 
 /* safety start */
-#safety p{
-  padding: 0px;
-}
+  #safety p{
+    padding: 0px;
+  }
 /* safety end */
 
 
@@ -26,20 +26,19 @@
 
 
 
-
 /* tech start */
-#tech .text-container img{
-  width: 100%;
-  padding: 0 75px;
-  margin-top: 40px;
-}
-/* tech end */
+  #tech .text-container img{
+    width: 100%;
+    padding: 0 75px;
+    margin-top: 40px;
+  }
+  /* tech end */
 
 
 
 /* team start */
-#team .col-5 {
-  margin: 80px 0px 0 0px;
-}
+  #team .col-5 {
+    margin: 80px 0px 0 0px;
+  }
 /* team end */
 }
