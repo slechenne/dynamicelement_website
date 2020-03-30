@@ -493,12 +493,12 @@ function init_blender() {
   hlight = new THREE.AmbientLight (0x404040,100);
   scene.add(hlight);
 
-  light = new THREE.PointLight(0xfaffcf,4);
+  light = new THREE.PointLight(0xfaffcf,5);
   light.position.set(5000,1000,0);
   scene.add(light);
 
 
-  light2 = new THREE.PointLight(0xfaffcf,3);
+  light2 = new THREE.PointLight(0xfaffcf,4);
   light2.position.set(-5000,3000,5000);
   scene.add(light2);
 
