@@ -386,9 +386,14 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
     overflow: hidden;
   }
 
-  canvas#padlock{
+  #hand_schild canvas{
+    transform: translate(-5%, -22%);
+  }
+
+  #padlock canvas{
     transform: translateX(-30%);
   }
+
 
 /* about section end */
 
