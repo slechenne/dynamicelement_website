@@ -1156,42 +1156,64 @@
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Material.007",
-            "pbrMetallicRoughness" : {}
-        },
-        {
-            "doubleSided" : true,
-            "name" : "Material.001",
-            "pbrMetallicRoughness" : {}
-        },
-        {
-            "doubleSided" : true,
-            "name" : "Material.006",
-            "pbrMetallicRoughness" : {}
-        },
-        {
-            "doubleSided" : true,
-            "emissiveFactor" : [
-                0,
-                0,
-                0
-            ],
-            "name" : "Default OBJ",
+            "name" : "steelBlueTwo",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0.800000011920929,
-                    0.800000011920929,
-                    0.800000011920929,
+                    0.058599,
+                    0.279987,
+                    1,
                     1
                 ],
-                "metallicFactor" : 0,
-                "roughnessFactor" : 0.5
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.25
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "steel",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.8,
+                    0.8,
+                    0.8,
+                    1
+                ],
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.4
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "steelBlueOne",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.028426,
+                    0.124772,
+                    0.42869,
+                    1
+                ],
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.250
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "hand.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.822466,
+                    0.650339,
+                    0.551721,
+                    1
+                ],
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.34166666865348816
             }
         }
     ],
     "meshes" : [
         {
-            "name" : "Sphere.006",
+            "name" : "schild",
             "primitives" : [
                 {
                     "attributes" : {

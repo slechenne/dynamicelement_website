@@ -110,7 +110,7 @@ function in_camera() {
 
 function in_light(){
 
-  hlightL = new THREE.AmbientLight (0x404040,100);
+  hlightL = new THREE.AmbientLight (0xEAD3C4,50);
   sceneL.add(hlightL);
 
   hlightR = new THREE.AmbientLight (0x404040,100);
@@ -118,8 +118,8 @@ function in_light(){
 
 
 
-  lightL = new THREE.PointLight(0xffffff,2);
-  lightL.position.set(5000,1000,0);
+  lightL = new THREE.PointLight(0xEAD3C4,70);
+  lightL.position.set(14000,6000,300);
   sceneL.add(lightL);
 
   lightR = new THREE.PointLight(0xffffff,5);
@@ -128,7 +128,7 @@ function in_light(){
 
 
 
-  light2L = new THREE.PointLight(0x404040,1);
+  light2L = new THREE.PointLight(0xEAD3C4,20);
   light2L.position.set(-5000,3000,5000);
   sceneL.add(light2L);
 

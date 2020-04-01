@@ -15,6 +15,9 @@ body, html{
   cursor: none;
 }
 
+body{
+  overflow-x: hidden;
+}
 
 /* fonts start */
 a, a:hover{
@@ -383,7 +386,7 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
   .canvas-overflow{
     height: 515px;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   #hand_schild canvas{
