@@ -84,6 +84,10 @@ h6{
   z-index: 1000;
 }
 
+#cursor.off{
+  display: none !important;
+}
+
 #cursor span {
     position: absolute;
     display: block;
@@ -284,6 +288,23 @@ header nav ul:nth-child(2) li:not(:first-child)::before{
     margin: 5px 0 0 -8px;
     font-size: 1rem;
 }
+
+header nav .cursor-on-off{
+  margin-top: 124px;
+  width: 100%;
+  padding: 00 0 35px 70px;
+}
+
+header nav .cursor-on-off p{
+  display: inline;
+  margin-right: 10px;
+  color: var(--blue-one);
+}
+
+header nav .cursor-on-off span{
+  font-size: 1.5rem;
+}
+
 /* nav end */
 /* header end */
 

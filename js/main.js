@@ -457,3 +457,109 @@ var swiper = new Swiper('#clients .swiper-container', {
   //   disableOnInteraction: false,
   // },
 });
+
+
+
+var cursorStatus = true;
+$(document).ready(function(){
+	var fname=getCookie("cursor");
+	if (fname=="") {
+		addCursor();
+    cursorStatus = true;
+		// alert(fname);
+	}
+	if (fname!="") {
+		removeCursor();
+    cursorStatus = false;
+		// alert(fname);
+	}
+	if (fname==null) {
+		addCursor();
+    cursorStatus = true;
+		// alert(fname);
+	}
+});
+
+
+			function removeCursor(){
+				$('#cursor').addClass('off');
+				$('#cursor').removeClass('on');
+				$('.cursor-on-off span').text('off');
+
+				$('body').css("cursor", "default");
+
+				$("a").hover(function(){
+					$(this).css("cursor", "pointer");
+				});
+				$(".cursor_hover").hover(function(){
+					$(this).css("cursor", "pointer");
+				});
+			}
+
+
+
+			function addCursor(){
+				$('#cursor').removeClass('off');
+				$('#cursor').addClass('on');
+				$('.cursor-on-off span').text('on');
+
+
+				$('body').css("cursor", "none");
+
+				$("a").hover(function(){
+					$(this).css("cursor", "none");
+				});
+				$(".cursor_hover").hover(function(){
+					$(this).css("cursor", "none");
+				});
+			}
+
+
+
+
+
+			$('.cursor-on-off').click(function(){
+					if (cursorStatus === true) {
+						removeCursor();
+						createCookie();
+						cursorStatus = false;
+					} else if (cursorStatus === false){
+						addCursor();
+						deleteCookie();
+						cursorStatus = true;
+					}
+
+			});
+
+
+
+function displayCookies() {
+var fname=getCookie("cursor");
+if (fname==null) {fname="";}
+if (fname!="") {fname="cookie="+fname; }
+alert (fname);
+
+}
+
+function getCookie(name) {
+var nameEQ = name + "=";
+//alert(document.cookie);
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0)==' ') c = c.substring(1);
+if (c.indexOf(nameEQ) != -1) return c.substring(nameEQ.length,c.length);
+}
+return null;
+}
+
+
+function createCookie(){
+	var a = new Date();
+			a = new Date(a.getTime() +1000*60*60*24*365);
+			document.cookie = 'cursor=nocursor; expires='+ a.toGMTString()+';';
+}
+
+function deleteCookie() {
+	document.cookie="cursor=;expires=Wed; 01 Jan 1970";
+}
